@@ -149,3 +149,10 @@ button[type="submit"]:active {
   transform: translateY(0);
 }
 
+/* Disqus Styles */
+#disqus_thread {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
