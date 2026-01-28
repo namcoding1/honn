@@ -1,27 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Dubbing</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World & Video Dubbing</title>
+  <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-    <main>
-        <section id="dubbing-section">
-            <h1>Video Dubbing</h1>
-            <div class="input-group">
-                <label for="video-upload">Upload Video</label>
-                <input type="file" id="video-upload" accept="video/*">
-            </div>
-            <div class="input-group">
-                <label for="script-input">Enter Script</label>
-                <textarea id="script-input" rows="5"></textarea>
-            </div>
-            <button id="dub-button">Dub Video</button>
-            <div id="video-container"></div>
-        </section>
-    </main>
-    <script src="main.js"></script>
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox" />
+      <div class="slider round"></div>
+    </label>
+  </div>
+  <h1>Hello, world!</h1>
+
+  <div class="contact-form-container">
+    <h2>제휴 문의</h2>
+    <form action="https://formspree.io/f/xnjdlvva" method="POST">
+      <div class="form-group">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">문의 내용:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">보내기</button>
+    </form>
+  </div>
+
+  <section id="dubbing-section">
+      <h1>Video Dubbing</h1>
+      <div class="input-group">
+          <label for="video-upload">Upload Video</label>
+          <input type="file" id="video-upload" accept="video/*">
+      </div>
+      <div class="input-group">
+          <label for="script-input">Enter Script</label>
+          <textarea id="script-input" rows="5"></textarea>
+      </div>
+      <button id="dub-button">Dub Video</button>
+      <div id="video-container"></div>
+  </section>
+
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://honn.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
